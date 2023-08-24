@@ -1,0 +1,50 @@
+.top {
+    min-height: calc(100vh - 81px);
+    background: url('../imgs/top-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.title {
+    padding-top: 16%;
+    font-size: 96px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.top__text {
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) { 
+    .title {    
+        font-size: 66px;
+        line-height: normal;
+    }
+    
+    .subtitle {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    .top {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .title {    
+        font-size: 48px;        
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,145 @@
+.features__titles {
+    padding-top: 100px;
+    display: flex;
+}
+
+.features__title {
+    flex-basis: 300px;
+    padding-right: 20px;
+}
+
+.features__text {
+    max-width: 330px;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding-bottom: 100px;
+}
+
+.tabs__btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+    max-height: 300px;
+}
+
+.tabs__btn-item {
+    font-weight: 700;
+}
+
+.tabs__btn-item--active {
+    color: #070707;
+}
+
+.tabs__content {
+    position: relative;
+}
+
+.tabs__content-item {
+    display: grid;
+    grid-template-columns: auto 280px;
+    grid-template-rows: auto 150px;
+    gap: 40px;
+    opacity: 0;
+    
+    position: absolute;
+
+    transition: all 1s ease;
+}
+
+.tabs__content-item--active {
+    opacity: 1;
+}
+
+.tabs__content-img {
+    grid-row: 1 / -1;
+    align-self: stretch;
+    object-fit: cover;
+}
+
+.tabs__content-box h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.video {
+    grid-column: 2/3;
+    width: 280px;
+    height: 150px;
+    background: url('../imgs/content-bg.jpg ') center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+    padding: 9px 10px;
+}
+
+.video span {
+    font-size: 13px;
+    color: #F6F4F5;
+}
+
+.video__btn {
+    margin-left: 22px;
+    margin-bottom: 9px;
+}
+
+@media (max-width: 992px) {
+    .tabs {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .tabs__btn {
+        display: block;
+        column-count: 2;
+        margin-bottom: 15px;
+    }
+    
+    .tabs__btn-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 620px) {
+    .features__titles {
+        margin-top: 10px;
+        padding-top: 100px;
+        display: block;
+    }
+    
+    .tabs__content-item {
+        display: block;
+    }
+    .video {
+        margin-top: 20px;
+        height: 250px;
+        width: auto;
+    }
+
+    
+}
+
+@media (max-width: 406px) {
+    .tabs__btn {
+        column-count: 1;
+    }
+
+    .features__text {
+        font-size: 32px;
+    }
+}

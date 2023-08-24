@@ -1,0 +1,31 @@
+.promo {
+    margin-bottom: 100px;
+}
+
+.promo__inner {
+    min-height: 500px;
+    background: url('../imgs/promo-bg.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.promo__button {
+    padding: 16px 14px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 26px);
+    bottom: 80px;
+
+}
+
+.promo__button:active {
+    bottom: 79px;
+}
+
+@media (max-width: 768px) {
+    
+}

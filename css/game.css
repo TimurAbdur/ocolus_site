@@ -1,0 +1,115 @@
+.game {
+    padding: 100px 0;
+}
+
+.game__title {
+    margin-bottom: 50px;
+}
+
+.game__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.game__desc {
+    padding-right: 10px;
+}
+
+.game__descr-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 10px;
+}
+
+.game__descr-text {
+    margin-bottom: 30px;
+}
+
+.game__descr-link {
+    padding: 16px 48px;
+    display: inline-block;
+    background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    border: 1px solid; 
+    border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+}
+
+.game__item {
+    padding: 20px 15px;
+
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-item-img {
+    margin-bottom: 10px;
+}
+
+.game__item-title {
+    color: var(--black, #070707);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game__item-text {
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.game__item-link {
+    background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: auto;
+}
+
+@media (max-width: 992px) {
+    .game {
+        margin-top: 230px;
+    }   
+
+    .game__inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .game__title {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width:620px) {
+    .game {
+        margin-top: 500px;
+    }   
+}
+
+@media (max-width:568px) {
+    .game {
+        padding-bottom: 40px;
+    }
+.game__inner {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.game__item {
+    transform: scale(0.9);
+}
+
+.game__inner {
+    gap: 0;
+}
+}

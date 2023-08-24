@@ -1,0 +1,43 @@
+.footer {
+    border: 1px solid #CACAD6;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 40px;
+}
+
+.social {
+    justify-self: end;
+    display: flex;
+    column-gap: 20px;
+}
+
+.social__item {
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 1140px) {
+    .footer .menu {
+        display: none;
+    }
+
+    .footer .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 450px) {
+    .social {
+        order: -1;
+    }
+    .footer .nav {
+       padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .footer {
+        height: 102px;  
+    }
+}
