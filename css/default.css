@@ -150,6 +150,12 @@ body {
     }
 }
 
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
 @media (max-width: 450px) {
     .menu {
         width: 100%;
